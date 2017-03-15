@@ -1,12 +1,26 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+int Check (int d, int p) {
+    if (d < 10000) {
+        printf ("\n deposit is incorrect \n");
+        return 1;
+    }
+    if (p <= 0 || p > 365) {
+        printf ("\n period is incorrect \n");
+        return 1;  
+    }
+    return 0;
+};
+    
 int main() {
 int d, p;  // d - deposit, p - period
 
 printf ("Enter the deposit amount and the period\n");
 
-scanf ("%d %d", &d, &p);
+do {
+    scanf ("%d %d", &d, &p);
+} while (Check (d,p));
 
 printf ("d:%d p:%d\n", d, p);
   
