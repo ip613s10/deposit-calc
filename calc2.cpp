@@ -13,7 +13,7 @@ int Check (int d, int p) {
     return 0;
 };
 
-void Profit (int d,int p) {
+void Profit (int d, int p) {
     if (d > 100000) {
         if (p <= 30)
             d = d - d / 10;
@@ -50,8 +50,7 @@ do {
 
 printf ("d:%d p:%d\n", d, p);
   
-Profit(d, p);
+Profit (d, p);
 
-system("pause");
 return 0;
 }
