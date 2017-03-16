@@ -40,17 +40,17 @@ printf ("\nProfit=%d\n", d);
 };
     
 int main() {
-int d, p;  // d - deposit, p - period
+    int d, p;  // d - deposit, p - period
 
-printf ("Enter the deposit amount and the period\n");
+    printf ("Enter the deposit amount and the period\n");
 
-do {
-    scanf ("%d %d", &d, &p);
-} while (Check (d,p));
+    do {
+        scanf ("%d %d", &d, &p);
+    } while (Check (d,p));
 
-printf ("d:%d p:%d\n", d, p);
+    printf ("d:%d p:%d\n", d, p);
   
-Profit (d, p);
+    Profit (d, p);
 
-return 0;
+    return 0;
 }
