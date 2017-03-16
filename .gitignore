@@ -1,0 +1,8 @@
+!README.md
+a.out
+*.o
+*~
+!Makefile
+.clang-format
+/deposit-calc
+
