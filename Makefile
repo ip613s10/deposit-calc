@@ -1,4 +1,5 @@
-deposit-calc: calc2.cpp
-	gcc -Wall calc2.cpp -o deposit-calc
+.PHONY: clean
+deposit-calc: calc2.c
+	gcc -Wall calc2.c -o deposit-calc
 clean:
-	rm -f deposit-calc
+	rm -rf deposit-calc a.out *~ .gitignore~

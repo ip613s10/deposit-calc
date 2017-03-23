@@ -4,5 +4,5 @@ a.out
 *~
 !Makefile
 .clang-format
-/deposit-calc
+deposit-calc
 
