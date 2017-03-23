@@ -1,9 +1,7 @@
 /deposit-calc
-!README.md
 a.out
 *.o
 *~
-!Makefile
 .clang-format
 deposit-calc
 .nfs0000000000da82b700000029
