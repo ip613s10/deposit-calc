@@ -1,7 +1,6 @@
+!Makefile
 /deposit-calc
-a.out
-*.o
-*~
 .clang-format
-deposit-calc
-.nfs0000000000da82b700000029
+/src/*.*
+!/src/*.h
+!/src/*.c
