@@ -6,7 +6,7 @@ all :
 	make bin/deposit-calc
 
 bin/deposit-calc : build/main.o build/deposit.o
-	gcc build/main.o build.deposit.o -o bin/deposit-calc $(CFLAGS)
+	gcc build/main.o build/deposit.o -o bin/deposit-calc $(CFLAGS)
 
 build/main.o : src/main.c src/deposit.h
 	gcc -c src/main.c -o build/main.o $(CFLAGS)
