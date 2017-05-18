@@ -9,11 +9,19 @@ CTEST(input_check, test_input)
     ASSERT_EQUAL(exp, result);
 }
 
+CTEST(input_check, test_input)
+{
+    int result = Check(1000, 100);
+    
+    int expected = 1;
+    ASSERT_EQUAL(expected, result);
+}
+
 CTEST(calc_test, calc)
 {
-    int result = Profit(123400, 140);
+    int result = Profit(123456, 150);
     
-    const int expected = 133272;
+    const int expected = 133332;
     ASSERT_DBL_NEAR(exp, result);
 }
 
