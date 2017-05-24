@@ -1,6 +1,14 @@
+!README.md
 !Makefile
 /deposit-calc
-.clang-format
-/src/*.*
+/src/.
 !/src/*.h
 !/src/*.c
+/build/.
+/build/test/.
+/bin/.
+/thirdparty/.
+!/thirdparty/ctest.h
+#DIRs_TEST
+/test/.
+!/test/*.c
