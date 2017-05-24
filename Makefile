@@ -1,5 +1,4 @@
 CFLAGS = -Wall -Werror -MP -MMD
-SOURCES = src/main.c src/deposit.c
 .PHONY: clean all deposit-calc test 
 
 all :
@@ -16,6 +15,7 @@ build/deposit.o : src/deposit.c src/deposit.h
 
 test :
 	make bin/deposit-calc-test
+	bin/deposit-calc-test
 
 bin/deposit-calc-test : build/test/main.o build/test/deposit-test.o
 	gcc build/test/main.o build/test/deposit-test.o build/test/deposit.o -o bin/deposit-calc-test $(CFLAGS)
