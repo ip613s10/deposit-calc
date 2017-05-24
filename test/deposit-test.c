@@ -14,7 +14,7 @@ CTEST(input_check, test_input)
     int result = Check(1000, 100);  
     int expected = 1;
     
-    ASSERT_EQUAL(exp, result);
+    ASSERT_EQUAL(expected, result);
 }
 
 CTEST(input_check_less_than_0_days, test_input)
@@ -22,7 +22,7 @@ CTEST(input_check_less_than_0_days, test_input)
     int result = Check(100000, -1);   
     int expected = 1;
     
-    ASSERT_EQUAL(exp, result);
+    ASSERT_EQUAL(expected, result);
 }
 
 CTEST(calc_test, calc)
