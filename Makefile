@@ -1,4 +1,5 @@
 CFLAGS = -Wall -Werror -MP -MMD
+SOURCES = src/main.c src/deposit.c
 .PHONY: clean all deposit-calc test 
 
 all :

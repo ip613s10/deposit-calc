@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "deposit.h"
+#include "deposit2.h"
 
 int Check (int d, int p) {
     if (d < 10000) {

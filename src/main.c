@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "deposit.h"
+#include "deposit2.h"
 
 int main() {
     int d, p;  // d - deposit, p - period of time

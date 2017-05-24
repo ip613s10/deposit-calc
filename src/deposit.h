@@ -1,8 +1,8 @@
 #ifndef DEPOSIT_CALC_H
 #define DEPOSIT_CALC_H
 
-int Check (int d, int p);
+#include "deposit2.h"
 
-int Profit (int d, int p);
+int Check (int d, int p);
 
 #endif
