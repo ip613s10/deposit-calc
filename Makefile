@@ -32,8 +32,9 @@ build/test/deposit.o : src/deposit.h src/deposit.c
 	gcc -c src/deposit.c -o build/test/deposit.o $(CFLAGS)
 
 clean :
-	rm -rf build/*.d build/test/*.d
-	rm -rf build/*.o build/test/*.o
-	rm bin/deposit-calc bin/deposit-calc-test
+	@rm -rf build/*.d build/test/*.d 
+	@rm -rf build/*.o build/test/*.o
+	@rm bin/deposit-calc bin/deposit-calc-test
+	@echo "All files have been cleaned."
 
 -include build/*.d
