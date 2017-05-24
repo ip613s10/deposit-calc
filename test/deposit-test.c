@@ -1,5 +1,5 @@
 #include <ctest.h>
-#include <../src/deposit.h>
+#include <deposit.h>
 
 CTEST(input_check, test_input)
 {
