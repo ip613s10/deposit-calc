@@ -1,12 +1,12 @@
 #include <ctest.h>
 #include <../src/deposit.h>
 
-CTEST(input_check_more_than_1_year, test_input)
+CTEST(input_check, test_input)
 {
-    int result = Check(777777, 555);
+    int result = Check(555666, 333);    
     int expected = 0;
     
-    ASSERT_EQUAL(exp, result);
+    ASSERT_EQUAL(expected, result);
 }
 
 CTEST(input_check, test_input)
@@ -17,18 +17,18 @@ CTEST(input_check, test_input)
     ASSERT_EQUAL(exp, result);
 }
 
-CTEST(calc_test, calc)
+CTEST(input_check_less_than_0_days, test_input)
 {
-    int result = Profit(123456, 150);
-    const int exp = 133332;
+    int result = Check(100000, -1);   
+    int expected = 1;
     
     ASSERT_EQUAL(exp, result);
 }
 
-CTEST(calc_test_less_than_0_days, calc)
+CTEST(calc_test, calc)
 {
-    int result = Profit(123456, -10);
-    const int exp = 0;
+    int result = Profit(123456, 150);
+    const int exp = 133332;
     
     ASSERT_EQUAL(exp, result);
 }
