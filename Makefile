@@ -16,7 +16,6 @@ build/deposit.o : src/deposit.c src/deposit.h
 
 test :
 	make bin/deposit-calc-test
-	bin/deposit-calc-test
 
 bin/deposit-calc-test : build/test/main.o build/test/deposit-test.o
 	gcc build/test/main.o build/test/deposit-test.o build/test/deposit.o -o bin/deposit-calc-test $(CFLAGS)
@@ -34,7 +33,7 @@ build/test/deposit.o : src/deposit.h src/deposit.c
 clean :
 	@rm -rf build/*.d build/test/*.d 
 	@rm -rf build/*.o build/test/*.o
-	@rm bin/deposit-calc bin/deposit-calc-test
+	@rm -f bin/deposit-calc bin/deposit-calc-test
 	@echo "All files have been cleaned."
 
 -include build/*.d
