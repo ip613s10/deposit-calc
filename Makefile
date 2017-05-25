@@ -27,7 +27,7 @@ build/test/main.o : src/deposit.h test/main.c
 	gcc -c src/deposit.c -o build/test/deposit.o $(CFLAGS)
 
 build/test/deposit-test.o : src/deposit.h test/deposit-test.c
-	gcc -c -I thirdparty -I src test/deposit-test.c -o build/test/deposit-test.o $(CFLAGS)
+	gcc -c -I thirdparty src test/deposit-test.c -o build/test/deposit-test.o $(CFLAGS)
 
 build/test/deposit.o : src/deposit.h src/deposit.c
 	gcc -c src/deposit.c -o build/test/deposit.o $(CFLAGS)

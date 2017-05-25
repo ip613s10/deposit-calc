@@ -1,7 +1,7 @@
 #include <ctest.h>
 #include "../src/deposit.h"
 
-CTEST(input_check, test_input)
+CTEST(input_check1, test_input)
 {
     int result = Check(555666, 333);    
     int expected = 0;
@@ -9,7 +9,7 @@ CTEST(input_check, test_input)
     ASSERT_EQUAL(expected, result);
 }
 
-CTEST(input_check, test_input)
+CTEST(input_check2, test_input)
 {
     int result = Check(1000, 100);  
     int expected = 1;
