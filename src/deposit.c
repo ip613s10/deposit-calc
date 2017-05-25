@@ -4,11 +4,9 @@
 
 int Check (int d, int p) {
     if (d < 10000) {
-        printf ("\n deposit is incorrect \n");
         return 1;
     }
     if (p <= 0 || p > 365) {
-        printf ("\n period is incorrect \n");
         return 1;  
     }
     return 0;

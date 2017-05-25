@@ -9,7 +9,7 @@ int main() {
 
     do {
         scanf ("%d %d", &d, &p);
-    } while (Check(d,p));
+    } while (Check(d,p), printf("Data is incorrect"));
 
     printf ("d:%d p:%d\n", d, p);
   
